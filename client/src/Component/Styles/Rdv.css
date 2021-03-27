@@ -1,0 +1,73 @@
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rdv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-rdv {
+  margin: 1.5em 0em 1.5em 0em;
+  border-radius: 20px;
+  border-radius: 50px 50px 50px 50px;
+  width: 31em;
+  height: 620px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+  background: rgba(245, 245, 245, 0.59);
+  position: absolute;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2em;
+}
+.Photo {
+  margin: 1.5em 0;
+  width: 75em;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.inpt {
+  margin-left: 7em;
+  width: 15em;
+  border-radius: 40px;
+  outline: none;
+  padding-left: 10px;
+}
+.inpt-com {
+  margin-left: 2em;
+  width: 25em;
+  height: 10em;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 10px;
+  padding-bottom: 7em;
+}
+h1 {
+  font-size: 3em;
+}
+label {
+  font-size: 2em;
+}
+.Resume-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2em;
+  font-size: 23px;
+  text-align: center;
+}
+
+.Resume {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  width: 72em;
+}

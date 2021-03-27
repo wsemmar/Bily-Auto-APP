@@ -1,0 +1,45 @@
+.product-header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+  margin-bottom: 1em;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid rgba(74, 73, 73, 0.25);
+  border-radius: 40px;
+  margin: 0 4em 2em 14em;
+}
+.product {
+  display: flex;
+  align-items: center;
+}
+.total {
+  display: flex;
+  justify-content: flex-end;
+}
+.product > img {
+  margin: 1em;
+}
+.product-name {
+  font-size: 2em;
+}
+.price {
+  font-size: 20px;
+  margin-right: 369px;
+}
+.total-price {
+  margin-right: 18em;
+}
+.checkout {
+  display: flex;
+  justify-content: center;
+}
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10em;
+}

@@ -1,0 +1,8 @@
+.slide-container {
+  width: 60em;
+  margin: auto;
+}
+.image-container > img {
+  width: 50em;
+  padding-left: 8em;
+}
