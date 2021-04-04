@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-notifications/lib/notifications.css";
 // Import provider from redux
 import { Provider } from "react-redux";
 // Import the app store

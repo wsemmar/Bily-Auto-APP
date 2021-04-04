@@ -6,7 +6,10 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { ADDCART } from "../Redux/Actions/cartAction";
-
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-notifications";
 const Products = (props) => {
   const [artices, setarticles] = useState("");
   useEffect(() => {
@@ -31,7 +34,7 @@ const Products = (props) => {
               >
                 <Card.Img variant="top" src={elem.image.url} />
                 <Card.Body>
-                  <Card.Title>{elem.title}</Card.Title>{" "}
+                  <Card.Title className="truncate">{elem.title}</Card.Title>{" "}
                   <Button
                     style={{
                       backgroundColor: "#4A4949",
@@ -52,6 +55,7 @@ const Products = (props) => {
                       display: "flex",
                       justifyContent: "space-between",
                       marginTop: "4em",
+                      alignItems: "center",
                     }}
                   >
                     <Button
@@ -61,15 +65,19 @@ const Products = (props) => {
                         borderColor: "#2cdb38",
                         marginRight: "1em",
                       }}
-                      onClick={() =>
+                      onClick={() => {
+                        NotificationManager.success(
+                          elem.title,
+                          "Ajouté au panier"
+                        );
                         props.ADDCART(
                           elem.image.url,
                           elem.title,
                           elem.price,
                           elem._id,
                           elem.quantity
-                        )
-                      }
+                        );
+                      }}
                     >
                       Ajouter Au Panier
                     </Button>
@@ -86,6 +94,7 @@ const Products = (props) => {
             );
           })}
       </div>
+      <NotificationContainer />
     </div>
   );
 };
